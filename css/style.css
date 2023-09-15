@@ -84,6 +84,9 @@ i {
     flex-basis: calc((100% / 12) * 12);
 }
 
+.padding {
+    padding: 12px;
+}
 /* utility classes */
 
 .justify-between {
@@ -195,13 +198,6 @@ i {
     justify-content: space-between;
 }
 
-.row-hero > .col-8 {
-    padding: 20px 20px;
-}
-
-.row-hero > .col-4 {
-    padding: 20px 20px;
-}
 
 
 
