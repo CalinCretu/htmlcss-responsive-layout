@@ -58,7 +58,8 @@ i {
     margin: 0 auto;
 }
 
-.row {
+.row,
+.col-8-row {
     display: flex;
     flex-wrap: wrap;
 }
@@ -84,9 +85,7 @@ i {
     flex-basis: calc((100% / 12) * 12);
 }
 
-.padding {
-    padding: 12px;
-}
+
 /* utility classes */
 
 .justify-between {
@@ -100,6 +99,14 @@ i {
 .border-radius {
     border-radius: 20px;
     background-color: var(--light-blue);
+}
+
+.padding {
+    padding: 12px;
+}
+
+.margin-bottom {
+    margin-bottom: 50px;
 }
 
 /* component classes */
@@ -146,11 +153,21 @@ i {
     margin: 30px 0;
 }
 
-.content-col {
+h3 {
+    font-size: 25px;
+    color: var(--blue);
+}
+
+p {
+    color: var(--dark-grey);
+    line-height: 30px;
+}
+
+.content-col-6 {
     max-width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    align-items: baseline;
     height: 100%;
 }
 
@@ -160,8 +177,29 @@ i {
     max-width: 60%;
 }
 
-.content-col > div {
-    padding: 24px;
+.content-col-6 > div {
+    padding: 15px;
+}
+
+.card-plan {
+    padding: 10px 0px 0px 0px;
+    height: 100%;
+}
+
+.image-col-6 {
+    flex-basis: calc((100% / 12) * 6);
+    display: flex;
+    align-self: end;
+}
+
+.col-4 > .card-plan {
+    text-align: center;
+}
+
+div > i {
+    font-size: 80px;
+    color: var(--blue);
+    padding: 15px;
 }
 
 /* debug */
@@ -188,7 +226,7 @@ i {
 
 
 .debug .container-hero {
-    max-width: 1180px;
+    max-width: 1164px;
     margin: 0 auto;
 }
 
@@ -198,6 +236,9 @@ i {
     justify-content: space-between;
 }
 
+* .row-hero > [class^='col'] {
+    padding: 10px;
+}
 
 
 
@@ -222,3 +263,25 @@ i {
         display: none;
     }
 }
+
+
+
+
+
+
+
+
+/* <div class="col-6 content-col">         
+                <div>
+                  <h3>Get a demo Application</h3>
+                </div>
+                <div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora eum inventore quo officiis iusto. Dolor tempora repellendus consectetur non ducimus.</p>
+                </div>
+                <div>
+                  <a class="button-blue" href="#"><i class="fa-brands fa-apple"></i>App Store</a>
+                </div>
+            </div>
+            <div class="col-6 content-col">
+              <img class="hero-img" src="img/phone.png" alt="phone-image">
+            </div>
