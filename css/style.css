@@ -156,6 +156,12 @@ i {
     margin: 50px;
 }
 
+.row-hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 h3 {
     font-size: 25px;
     color: var(--blue);
@@ -233,7 +239,7 @@ p {
     margin: 0 auto;
 }
 
-.debug .row-hero {
+.row-hero {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -286,7 +292,25 @@ p {
     .navbar-list {
         display: none;
     }
+
+    .row-hero {
+        flex-direction: column;
+    }
+
+    .content-col-6 {
+        align-items: start;
+        padding: 16px;
+    }
+
+    .image-col-6 {
+        justify-content: center;
+    }
+
+    .margin-bottom {
+        margin-bottom: 0px;
+    }
 }
+
 
 
 
