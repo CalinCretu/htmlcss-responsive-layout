@@ -211,6 +211,15 @@ p {
     padding: 15px;
 }
 
+.strategic {
+    background-color: var(--purple);
+    padding-top: 50px;
+}
+
+.row-strategic {
+    display: flex;
+}
+
 /* debug */
 
 .debu .container,
