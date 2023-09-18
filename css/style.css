@@ -244,6 +244,14 @@ p {
   row-gap: 40px;
 }
 
+.content-col-8 {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  row-gap: 40px;
+}
+
 .development-image-col-6 {
   max-width: 60%;
   margin-bottom: 10px;
@@ -369,7 +377,7 @@ h4 {
 
  .benefits-container {
   max-width: 1164px;
-  margin: 40px auto;
+  margin: 40px auto 0;
  }
 
 .col-4-benefits {
@@ -391,17 +399,49 @@ h4 {
   padding: 20px;
 }
 
+.about-us-image {
+  max-width: 200px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 50%;
+}
 
+.about-us-paragraph {
+  max-width: 90%;
+}
 
+.about-us-title {
+  font-size: 60px;
+}
 
+.about-us {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
 
+.about-us-container {
+  max-width: 1164px;
+  margin: 0 auto;
+}
 
+.about-us-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px;
+}
 
+.col-4-about-us>.card-plan {
+  text-align: center;
+}
 
+.col-4-about-us {
+  flex-basis: calc((100% / 12) * 4);
+}
 
-
-
-
+.figcaption {
+  max-width: 80%;
+  
+}
 
 
 
@@ -429,11 +469,7 @@ h4 {
 
 
 
-.row-hero {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
+
 
 * .row-hero>[class^='col'] {
   padding: 12px;
