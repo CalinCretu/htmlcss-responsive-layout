@@ -17,7 +17,7 @@ menu {
 }
 
 img {
-    width: 100%;
+    max-width: 100%;
 }
 
 
@@ -152,10 +152,6 @@ i {
 
 /* main */
 
-.hero {
-    margin: 50px;
-}
-
 .row-hero {
     display: flex;
     flex-wrap: wrap;
@@ -255,7 +251,7 @@ p {
 }
 
 * .row-hero>[class^='col'] {
-    padding: 10px;
+    padding: 12px;
 }
 
 
@@ -286,13 +282,12 @@ p {
         display: flex;
         align-self: start;
     }
-
-
     
 
     .hero-img {
         margin: 0;
         max-height: none;
+        max-width: 60%;
     }
 }
 
@@ -321,7 +316,7 @@ p {
 }
 
 
-
+DARE ROW GAP A TUTTE LE ROW!!!!!!!!!!!!!
 
 
 
