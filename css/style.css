@@ -175,6 +175,7 @@ i {
   border-radius: 20px;
   padding: 0 20px;
   max-width: 40%;
+  margin-top: 20px;
 }
 
 /* header */
@@ -368,7 +369,7 @@ h4 {
 
  .benefits-container {
   max-width: 1164px;
-  margin: 0 auto;
+  margin: 40px auto;
  }
 
 .col-4-benefits {
@@ -377,7 +378,7 @@ h4 {
 }
 
 .benefits-numbers {
-  font-size: 50px;
+  font-size: 70px;
   color: var(--purple);
   font-weight: bold;
 }
@@ -482,6 +483,11 @@ h4 {
     width: 400px;
     max-width: 100%;
   }
+
+  .col-4-benefits {
+    flex-basis: calc((100% / 12) * 6);
+    padding: 12px;
+  }
 }
 
 @media (max-width:576px) {
@@ -520,5 +526,15 @@ h4 {
 
   .testimonials-opinion > p {
     margin: 0 30px;
+  }
+
+  .col-4-benefits {
+    flex-basis: calc((100% / 12) * 12);
+    padding: 12px;
+    margin: 30px;
+  }
+
+  .benefits-title {
+    margin: 30px;
   }
 }
